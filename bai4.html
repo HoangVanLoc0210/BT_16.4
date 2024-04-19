@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2> Tính diện tích hình chữ nhật </h2>
+<br>
+<input type="number" id="a" placeholder=" Nhập chiều dài hình chữ nhật">
+<input type="number" id="b" placeholder=" Nhập chiều rộng hình chữ nhật">
+<br>
+<button onclick="ketqua()"> Kết quả</button>
+<br> <br>
+<p id="kq"></p>
+</body>
+
+<script>
+    function ketqua() {
+        let a = +document.getElementById('a').value;
+        let b = +document.getElementById('b').value;
+        let s = a * b;
+        document.getElementById('kq').innerHTML = " Diện tích hình chữ nhật là:" + s
+    }
+</script>
+</html>
