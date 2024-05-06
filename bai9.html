@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<h3> Kiểm tra 3 số thực nhập vào có phải là các cạnh của 1 tam giác không</h3>
+<input type="number" id="a" placeholder=" Nhập số a: ">
+<input type="number" id="b" placeholder=" Nhập số b: ">
+<input type="number" id="c" placeholder=" Nhập số c: ">
+<button onclick="kq()"> Kết quả </button> <br>
+<p id="kq"></p>
+<body>
+<script>
+    function kq() {
+        let a = +document.getElementById("a").value;
+        let b = +document.getElementById("b").value;
+        let c = +document.getElementById("c").value;
+        if ( a>0 && b>0 && c>0 && a+b>c && a+c>b && c+b>a ) {
+            document.getElementById("kq").innerHTML = 'Đúng rồi là chính nó'
+        }
+        else { document.getElementById("kq").innerHTML = 'a b c không phải là ba cạnh của một tam giác'}
+    }
+</script>
+</body>
+</html>
